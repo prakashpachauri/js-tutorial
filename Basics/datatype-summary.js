@@ -40,3 +40,28 @@ console.log(typeof myFunction);
 
 console.log(typeof anotherid)
 console.log(typeof id)
+
+//+++++++++++++++++++++++++  How to store variable in a memory ++++++++++++++++++++++//
+//  Stack is store the name of a variable and value and heap is store the reference type value
+
+let myyoutubename  = " Prakashwebdev"
+let anotherchannel=myyoutubename
+anotherchannel= "prakashfullstackdeveloper"
+console.log(anotherchannel);
+console.log(myyoutubename);
+
+
+let userone={
+    usermail:"Prakash@gmail.com",
+    upi:"prakahs@hdfc",
+}
+
+console.log(userone);
+
+let usertwo=userone
+
+console.log(usertwo);
+usertwo.usermail="Prakash@google.comm"
+
+console.log(userone.usermail);
+console.log(usertwo.usermail);
