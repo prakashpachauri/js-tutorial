@@ -11,6 +11,8 @@ tinderUser.name ="Prakash Pachauri"
 tinderUser.isloggedIn =false
 // console.log(tinderUser);
 
+
+
 // nested object :- it is a form of  object and in one object contain many object in the js
 const regularUser={
    userdetail: {
@@ -22,15 +24,21 @@ const regularUser={
     }
 }
 
+
+
 // how to print the nested object in the javascript
 
 console.log(regularUser.userdetail.userfulname.firstname);
+
+
 
 // declare the object and intializes the object key and value
 
 const obj1={ 1:"a", 2:"b"}
 const obj2={ 3:"a", 4:"b"}
 const obj4={ 5:"a", 6:"b"}
+
+
 
 // how to print the combine of the key and value
 
@@ -39,6 +47,8 @@ const obj4={ 5:"a", 6:"b"}
 const obj3=Object.assign({},obj1,obj2,obj4)
 console.log(obj3);
 console.log(obj1);
+
+
 
 
 // how to declare the array and intialize the key and value in the array array is represent the [] 
@@ -61,6 +71,9 @@ const user=[
 
     },
 ]
+
+
+
 
 // how to print the array with the help of indexing method and .email
 
