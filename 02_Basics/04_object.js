@@ -28,7 +28,7 @@ const regularUser={
 
 // how to print the nested object in the javascript
 
-console.log(regularUser.userdetail.userfulname.firstname);
+// console.log(regularUser.userdetail.userfulname.firstname);
 
 
 
@@ -44,9 +44,9 @@ const obj4={ 5:"a", 6:"b"}
 
 // const obj4={obj1,obj2}
 // object.assign :- it is used for printing the combine and add the many object key value in the one object it solve the problem of printing
-const obj3=Object.assign({},obj1,obj2,obj4)
-console.log(obj3);
-console.log(obj1);
+// const obj3=Object.assign({},obj1,obj2,obj4)
+// console.log(obj3);
+// console.log(obj1);
 
 
 
@@ -77,7 +77,7 @@ const user=[
 
 // how to print the array with the help of indexing method and .email
 
-console.log(user[1].email)
+// console.log(user[1].email)
 
 // console.log(tinderUser);
 
@@ -98,4 +98,39 @@ console.log(user[1].email)
 
 
 // console.log(tinderUser.hasOwnProperty('isloggedIn'));
+
+
+const course={
+    coursename:"Js in hindi",
+    price:999,
+    courseInstructor:"Hitesh Chaudhary",
+}
+
+
+// destructuring of object name is converted into short name as a referance name
+
+const {courseInstructor:Instructor}=course
+
+console.log(Instructor);
+
+
+
+
+// json api in java
+
+// {
+//     "Name":"Prakash",
+//    " Qualificaiton":"BA",
+//    "Price": "free",
+// }
+
+
+// Array contain many object in javascript
+
+
+// [
+//     {},
+//     {},
+//     {},
+// ]
 
