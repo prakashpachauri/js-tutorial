@@ -97,12 +97,14 @@ const MynewArray=[100,200,300,400,500]
 
 
 function returnthevalue(getArray){
+    // get array is fetch the value according to the index funtion
     return getArray[2]
 }
 
 // console.log(returnthevalue(MynewArray));
 
 console.log(returnthevalue([90,60,50,110,120,130]));
+
 
 
 
