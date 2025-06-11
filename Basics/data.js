@@ -22,5 +22,8 @@ let state
 // symbol => unique
 //object
 
+
+// typeof funtion :- it is used to check the data type of the variable
+
 console.log(typeof age);
 
