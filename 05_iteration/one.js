@@ -21,3 +21,37 @@ for (let i = 0; i<=10; i++) {
     // console.log(i)
     
 }
+// if is use for check the condition statement
+
+for (let index = 0; index <=10; index++) {
+    if(index==5){
+        // console.log("5 is best number")
+    }
+    const element =index;
+    // console.log(index)
+    
+}
+
+// break statement
+
+for (let index = 0; index <=10; index++) {
+    if (index==6){
+        console.log("6 is detection ")
+        break;
+    }
+    const element = index;
+    console.log(index)
+    
+}
+// continue statement
+
+
+for (let index = 0; index <=10; index++) {
+    if (index==6){
+        console.log("6 is detection ")
+        continue;
+    }
+    const element = index;
+    console.log(index)
+    
+}
