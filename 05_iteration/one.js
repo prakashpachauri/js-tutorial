@@ -1,4 +1,4 @@
-// for loop 
+// for loop  it is used like a machine
 
 for (let i = 0; i <=10; i++) {
     const element = i;
