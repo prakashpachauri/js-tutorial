@@ -1,0 +1,74 @@
+*{
+    
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background-color: #124846;
+    
+}
+
+#result{
+    font-size: 40px;
+}
+
+label{
+    margin: right 30px;
+}
+
+h2{
+    font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:yellow
+    
+    
+}
+input{
+    padding: 2px;
+    margin-top: 10px;
+    margin-bottom:20px;
+    size:larger
+}
+
+.Container{
+    margin:50px;
+
+  
+    
+    
+}
+h1{
+    font-size: 45px;
+    color:whitesmoke
+}
+
+.Height{
+  margin: 100px;
+  margin-bottom: 30px;
+  padding: 30px;
+  color:white;
+
+}
+.Weight{
+  margin: 100px;
+  gap:20px;
+  margin-bottom: 30px;
+  padding: 30px;
+  color:bisque;
+
+}
+button{
+    font-weight: bold;
+    color:black;
+    background-color: white;
+    border-radius: 0.2px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+span{
+    margin:auto
+}
