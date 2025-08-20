@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in html</title>
+
+</head>
+<body style="background-color: #414141 ; color:aliceblue;">
+    <h1>Amazing Images</h1>
+    <div>
+    <ul id="Images">
+        <li><img src="https://images.pexels.com/photos/1179225/pexels-photo-1179225.jpeg" id="river" alt="river" width="150px" height="150px"></li>
+        <li><img src="https://images.pexels.com/photos/33504837/pexels-photo-33504837.jpeg"id="city" alt="city" width="150px" height="150px"></li>            
+        <li><img src="https://images.pexels.com/photos/31228051/pexels-photo-31228051.jpeg"id="kali" alt="kali" width="150px" height="150px"></li>
+        <li><img src="https://images.pexels.com/photos/6000925/pexels-photo-6000925.jpeg" id="ladoo"alt="ladoo" width="150px" height="150px"></li>
+        <li><img src="https://images.pexels.com/photos/16354650/pexels-photo-16354650.jpeg"id="krishna" alt="kali" width="150px" height="150px"></li>
+        
+     <li><a style="color: aliceblue;"href="http://www.google.com">google</a></li>
+    </ul>
+    </div>
+    <script>
+        // document.getElementById("river").addEventListener("click", function() {
+        //     console.log("River image clicked!");
+        // });
+        
+        // document.getElementById("city").addEventListener("click", function(e) {
+        //     e.preventDefault(); // Prevent default action if it's a link
+        //     console.log("City image clicked!");
+        // });
+
+        // Event Propogation
+
+                // event bubbling
+
+        // document.querySelector("#Images").addEventListener("click", function(e) {
+        //     // e.preventDefault(); // Prevent default action if it's a link
+        //     console.log("clicked inside the ul") ; 
+        // },false);
+
+        // document.querySelector('#kali').addEventListener("click", function(e) {
+        //     console.log("clicked on kali image") ; 
+        // },false);
+
+
+
+        // Event Capturing
+
+        // document.querySelector("#Images").addEventListener("click", function() {
+        //   console.log("clicked inside the ul") ; 
+        // },true);
+
+        // document.querySelector('#kali').addEventListener("click", function() {
+        //     console.log("clicked on kali image") ; 
+        //     // e.stopPropagation();    // console.log(e) ;
+        // //   
+        // },true);
+
+
+
+        // document.querySelector("#Images").addEventListener("click",function(e){
+        //     // e.preventDefault(); // Prevent default action if it's a link
+        //     console.log(e.target.parentNode);
+        //     let removeIt=e.target.parentNode;
+        //     // removeIt.remove();
+
+        //     removeIt.parentNode.removeChild(removeIt);
+        // })
+
+
+    
+
+
+        // image delete and print id and tag name 
+
+
+
+        document.querySelector("#Images").addEventListener("click",function(e){
+            // e.preventDefault(); // Prevent default action if it's a link
+            console.log(e.target.tagName);
+            if(e.target.tagName ==='IMG'){
+                console.log(e.target.id);
+                let removeIt=e.target.parentNode;
+                removeIt.remove();
+    
+                // removeIt.parentNode.removeChild(removeIt);
+
+            }
+        })
+
+
+
+    
+             
+
+    </script> 
+                                                                                   
+</body>
+</html>
