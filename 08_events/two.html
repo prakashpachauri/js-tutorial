@@ -8,18 +8,25 @@
 <body>
     <div>   
             <h1> Innobit Technology</h1>
-            <button id="#stop"> Stop </button>
+            <button id="stop"> Stop </button>
     </div>
     
     <script>
         const sayhitesh=function(){
             console.log('Hitesh');
         }
-        
-        
-       const changeme= setTimeout(sayhitesh,1000);
+        const changeText=function(){
+            document.querySelector('h1').innerHTML="Prakash Pachauri from GLA UNIVERSITY"
 
-       clearTimeout(changeme)
+        }
+        const changeme=setTimeout(changeText,2000);
+        
+        document.querySelector('#stop').addEventListener('click', function(){
+            clearTimeout(changeme)
+            
+            console.log('STOPPED')
+        })
+       
     </script>
     
 </body>
