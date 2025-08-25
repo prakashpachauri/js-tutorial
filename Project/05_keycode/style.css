@@ -1,0 +1,28 @@
+.project{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: aliceblue;
+    margin-top:250px;
+    /* border: 2px solid white; */
+}
+
+
+body {
+    background-color: #282c34;
+    color: #61dafb;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 20px;
+}
+
+tr,th,td{
+    border: 1px solid #61dafb;
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+}
