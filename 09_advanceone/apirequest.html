@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api request</title>
+    <link rel="stylesheet" href="api.css">
+</head>
+<body>
+
+
+    <!-- <div class="image-container" id="image-container">
+ Image and followers will be inserted here -->
+<!-- </div> -->
+<!-- 
+<script>
+    const requestUrl = "https://api.github.com/users/hiteshchoudhary";
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl);
+    
+    xhr.onreadystatechange = function () {
+        console.log(xhr.readyState);
+        
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText);
+            console.log(typeof data);
+            console.log(data.followers);
+
+            // Step 1: Create an img element
+            const img = document.createElement('img');
+            img.src = data.avatar_url; // dynamically use avatar from API
+            img.alt = data.login;
+            img.width = 200;
+
+            // Step 2: Create a paragraph to show followers
+            const para = document.createElement('p');
+            para.textContent = `Followers: ${data.followers}`;
+
+            // Step 3: Append both to the container
+            const container = document.getElementById('image-container');
+            container.appendChild(img);
+            container.appendChild(para);
+        }
+    };
+
+    xhr.send();
+</script> --> 
+
+    <div class="image-container" id="image-container">
+        <!-- 0	UNSENT	Client has been created. open() not called yet.
+1	OPENED	open() has been called.
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	LOADING	Downloading; responseText holds partial data.
+4	DONE	The operation is complete. -->
+    </div>
+    <script>
+        const requesturl="https://api.github.com/users/hiteshchoudhary"
+        const xhr= new XMLHttpRequest();
+        xhr.open('get',requesturl)
+        xhr.onreadystatechange= function () {
+            console.log(xhr.readyState)
+            if(xhr.readyState===4){
+                const data = JSON.parse(this.responseText)
+                console.log(typeof data)
+
+                console.log(data.followers);
+
+                const img = document.createElement('img')
+                img.src=data.avatar_url
+                img.alt=data.login
+                img.width=500
+                const para = document.createElement('p')
+                para.textContent=`Followers: ${data.followers}` 
+                const container = document.getElementById('image-container')
+                container.appendChild(img)
+                container.appendChild(para) 
+                
+            }
+            
+        }
+        xhr.send()
+</script>
+    
+</body>
+</html>
