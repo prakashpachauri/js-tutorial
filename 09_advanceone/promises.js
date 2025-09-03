@@ -1,46 +1,31 @@
-const promiseOne = new Promise(function(resolve, rejected){
+const promise = new Promise (function(resolve,reject){
+    // Do any async task
+    // DB Call , Cryptography, Network
+
     setTimeout(function(){
+        console.log('Async task one is complete')
         resolve();
-        console.log(" Asyn task is completed");
-        
-    })
+    },1000);
+});
 
+promise.then(function(){
+    console.log('Async task is consumed')
 })
 
+// Second Promise without holding the variable
 
-promiseOne.then(function(){
-    console.log("promise is consuemed")
-})
-
-
-new Promise (function(resolve,reject){
+new Promise (function(resolve,reject) {
     setTimeout(function(){
-        console.log("Async task 2 is completed");
-        resolve();  
-    })
-}).then(function(){
-    console.log("Promise 2 is consumed")
+        console.log('Async task 2')
+        resolve()
+
+    },1000)
+    
+}).then( function(){
+ console.log('task two is resolved')
 })
 
 
-const promiseThree = new Promise(function(resolve,reject){
-    setTimeout(function(){
-        let error=false;
-        if(!error){
-            console.log("Async task 3 is completed");
-            resolve();
-        }else{
-            console.log("Async task 3 is not completed");
-            reject('Error: Something went wrong');
-        }
-    })
+// Promise Three
 
-})
-
-promiseThree.then(function(){
-    console.log("Promise 3 is consumed")
-}).catch(function(error){
-    console.log(error);
-}).finally(function(){
-    console.log("Finally will be executed always")
-})
+const 
