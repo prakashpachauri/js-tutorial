@@ -1,6 +1,12 @@
 let myname="Prakash       ";
 let aname="Pachauri       ";
 
+
+// In this file we learn about how to trim the string remove the space and count the length of a string
+// In this file we create a method/function and we use in this file
+// we learn the __proto__ 
+// 
+
 /*console.log(myname.trim().length);
 console.log(myname.length);
 console.log(aname.length);
