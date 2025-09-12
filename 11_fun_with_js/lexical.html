@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lexcial innobit </title>
+</head>
+<body style="background-color: #313131;" >
+    <button id="Orange">Orange</button>
+    <button id="blue">blue</button>
+    <button id="Red">Red</button>
+
+    
+</body>
+
+<script>
+
+    // lexical scope in js it is used to provide the functionality to the child function
+    // function init(){
+    //     let name="prakash from goolgle";
+    //     function displayname(){
+    //         console.log(`inner function called is ${name}`);
+
+    //     }
+    //     displayname();
+
+    // }
+    // init();
+
+    // function Outer(){
+    //     let name="innobit provide live project practices"
+
+    //     // console.log(`Secret is ${secret}`)
+    //     // parent function can not access child function properties
+
+    //     function inner(){
+
+    //         // child function can access all property of parent function 
+
+    //         let secret= "Confidential project is provided by defence"
+    //         console.log(`Technology is providing by ${name}`);
+
+
+    //     }
+
+    //     function innertwo(){
+    //         console.log(`inner two access parent variable is ${name}`)
+
+    //         // in this console aren't not access the inner function property of variable
+    //         console.log(`is this function can access inner function ${secret}`);
+            
+    //     }
+    //     inner();
+    //     innertwo();
+    // }
+
+    // Outer()
+
+    // function makefunc(){
+    //     let name= "mozilla"
+
+    //     function displayname(){
+    //         console.log(`outer function is call inside inner ${name}`)
+
+    //     }
+    //     return displayname
+
+    // }
+    // const myfunc=makefunc();
+    // // console.log(`${myfunc}`)
+    // myfunc()
+   
+
+
+
+   
+</script>
+<script>    
+        //  document.getElementById('Orange').onclick = function( ){
+        // document.body.style.backgroundColor='Orange';
+    // },
+    function handler(color){
+        
+
+        return function(){
+           document.body.style.backgroundColor=`${color}`
+        }
+    }
+
+
+
+
+
+    document.getElementById('Orange').onclick = handler('Orange' )
+    document.getElementById('blue').onclick = handler('blue' )
+    document.getElementById('Red').onclick = handler('Red' )
+</script>
+
+</html>
